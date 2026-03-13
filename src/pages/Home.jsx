@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
      <div className="relative max-w-6xl px-6">
-  <h1 className="font-bold leading-[1.2] text-gray-800 text-[40px] md:text-[46px]">
+  <h1 className="font-bold leading-[1.2] text-gray-800 text-[30px] md:text-[46px]">
 
     {/* First Line */}
     <div className="flex justify-center items-center flex-wrap gap-2">

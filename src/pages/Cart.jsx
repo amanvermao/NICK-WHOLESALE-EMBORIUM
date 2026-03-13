@@ -23,11 +23,11 @@ const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
       )}
 
       {/* SIDEBAR */}
-      <div
-        className={`fixed top-0 right-0 h-full w-[420px] bg-white shadow-xl z-50
-        transform transition-transform duration-300 ease-in-out
-        ${open ? "translate-x-0" : "translate-x-full"}`}
-      >
+     <div
+  className={`fixed top-0 right-0 h-full w-full sm:w-[380px] lg:w-[420px] bg-white shadow-xl z-50
+  transform transition-transform duration-300 ease-in-out flex flex-col
+  ${open ? "translate-x-0" : "translate-x-full"}`}
+>
 
         {/* HEADER */}
         <div className="flex justify-between items-center p-5 border-b">
@@ -46,11 +46,11 @@ const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
         </div>
 
         {/* CART ITEMS */}
-        <div className="p-5 space-y-4 overflow-y-auto h-[70%]">
+        <div className="p-5 space-y-4 overflow-y-auto flex-1">
 
           {cart.length === 0 ? (
 
-  <div className="flex flex-col items-center justify-center h-full text-center py-16">
+  <div className="flex flex-col items-center justify-center h-full text-center py-10 sm:py-16">
 
     {/* Icon */}
     <svg
@@ -98,14 +98,14 @@ const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
         </div>
 
         {/* FOOTER */}
-        <div className="absolute bottom-0 w-full p-5 border-t">
+        <div className="p-5 border-t">
 
           <div className="flex justify-between mb-4 text-lg font-semibold">
             <span>Total:</span>
             <span>${total}.00</span>
           </div>
 
-          <div className="flex gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
 
             {/* CLEAR CART */}
             <button

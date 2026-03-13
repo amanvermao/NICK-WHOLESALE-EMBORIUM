@@ -54,7 +54,7 @@ const handleSave = () => {
 
   return (
 
-    <div className="min-h-screen bg-gray-100 p-10">
+    <div className="min-h-screen bg-gray-100 px-4 py-8 md:p-10">
 
       <div className="max-w-6xl mx-auto">
 
@@ -63,15 +63,15 @@ const handleSave = () => {
           ← Back to Shopping
         </Link>
 
-        <h1 className="text-3xl font-bold mb-8">
+       <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">
           Checkout
         </h1>
 
-        <div className="grid grid-cols-3 gap-8">
+       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
 
           {/* SHIPPING FORM */}
 
-          <div className="col-span-2 bg-white p-8 rounded-xl shadow">
+          <div className="lg:col-span-2 bg-white p-6 md:p-8 rounded-xl shadow">
 
             <h2 className="text-xl font-semibold mb-6">
               Shipping Information
@@ -88,7 +88,7 @@ const handleSave = () => {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                 <div>
                   <label>Email</label>
@@ -119,7 +119,7 @@ const handleSave = () => {
                 />
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
                 <div>
                   <label>City</label>
@@ -171,7 +171,7 @@ const handleSave = () => {
 
           {/* ORDER SUMMARY */}
 
-          <div className="bg-white p-6 rounded-xl shadow h-fit">
+         <div className="bg-white p-6 rounded-xl shadow h-fit lg:sticky lg:top-24">
 
             <h3 className="text-lg font-semibold mb-4">
               Order Summary

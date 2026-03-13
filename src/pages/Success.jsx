@@ -19,7 +19,7 @@ export default function Success() {
     order || {};
 
   return (
-    <div className="min-h-screen bg-gray-100 py-14 px-6">
+   <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6">
 
       {/* SUCCESS HEADER */}
       <div className="max-w-5xl mx-auto text-center">
@@ -28,7 +28,7 @@ export default function Success() {
           style={{ fontSize: 70, color: "#16a34a" }}
         />
 
-        <h1 className="text-3xl font-bold mt-4">
+        <h1 className="text-2xl sm:text-3xl font-bold mt-4">
           Payment Successful!
         </h1>
 
@@ -41,7 +41,7 @@ export default function Success() {
       <div className="max-w-5xl mx-auto bg-white rounded-xl shadow mt-10">
 
         {/* ORDER HEADER */}
-        <div className="flex justify-between items-center p-6 border-b">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 p-5 sm:p-6 border-b">
 
           <div>
             <h2 className="text-xl font-semibold">
@@ -97,14 +97,14 @@ export default function Success() {
 
             <div
               key={item.id}
-              className="flex items-center justify-between mb-4"
+               className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4"
             >
 
-              <div className="flex gap-4">
+              <div className="flex gap-3 sm:gap-4">
 
                 <img
                   src={item.image}
-                  className="w-16 h-16 object-cover rounded"
+                  className="w-14 h-14 sm:w-16 sm:h-16 object-cover rounded"
                 />
 
                 <div>
@@ -121,7 +121,7 @@ export default function Success() {
 
               </div>
 
-              <div className="text-right">
+             <div className="sm:text-right text-sm">
 
                 <p className="font-semibold">
                   ₹{item.price}
@@ -140,7 +140,7 @@ export default function Success() {
         </div>
 
         {/* TOTALS */}
-        <div className="p-6">
+        <div className="p-5 sm:p-6">
 
           <div className="flex justify-between text-sm mb-2">
             <span>Subtotal</span>
@@ -165,7 +165,7 @@ export default function Success() {
         </div>
 
         {/* FOOTER */}
-        <div className="border-t p-6 text-center text-sm text-gray-600">
+       <div className="border-t p-5 sm:p-6 text-center text-sm text-gray-600">
 
           A confirmation email has been sent.
 
