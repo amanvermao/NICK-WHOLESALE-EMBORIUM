@@ -6,7 +6,7 @@ const products = [
     id: 1,
     title: "Red Kalyug Plain Satin Silk Banarasi Saree",
     code: "HF60-RED",
-    price: 2999,
+    price: 100,
     currency: "INR",
     description:
       'This Red Kalyug Plain Satin Silk Banarasi Saree blends traditional craftsmanship...',
@@ -16,7 +16,7 @@ const products = [
     id: 2,
     title: "Navy Blue Kalyug Plain Satin Silk Banarasi Saree",
     code: "HF08-NAVY-BLUE",
-    price: 2999,
+    price: 250,
     currency: "INR",
     description:
       'This Navy Blue Kalyug Plain Satin Silk Banarasi Saree blends traditional craftsmanship...',
