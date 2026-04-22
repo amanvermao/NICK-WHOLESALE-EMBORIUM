@@ -5,6 +5,10 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Success from "./pages/Success";
 import Failed from "./pages/Failed";
+import Footer from "./pages/Footer";
+import ComplaintPolicy from "./pages/ComplaintPolicy";
+import RefundPolicy from "./pages/RefundPolicy";
+import TermsAndCondition from "./pages/TermsAndCondition";
 
 function App() {
 
@@ -20,8 +24,12 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/success" element={<Success />} />
         <Route path="/failed" element={<Failed />} />
+         <Route path="/ComplaintPolicy" element={<ComplaintPolicy/>} />
+          <Route path="/RefundPolicy" element={<RefundPolicy/>} />
+           <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
 
       </Routes>
+      <Footer/>
 
     </BrowserRouter>
   );
