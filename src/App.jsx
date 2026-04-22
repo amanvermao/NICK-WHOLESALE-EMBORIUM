@@ -9,6 +9,8 @@ import Footer from "./pages/Footer";
 import ComplaintPolicy from "./pages/ComplaintPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import TermsAndCondition from "./pages/TermsAndCondition";
+import AboutUs from "./pages/AboutUs";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
          <Route path="/ComplaintPolicy" element={<ComplaintPolicy/>} />
           <Route path="/RefundPolicy" element={<RefundPolicy/>} />
            <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
+            <Route path="/AboutUs" element={<AboutUs/>} />
+             <Route path="/ContactPage" element={<ContactPage/>} />
 
       </Routes>
       <Footer/>

@@ -26,6 +26,18 @@ const Footer = () => {
         >
           Terms and Condition
         </Link>
+        <Link
+          to={'/AboutUs'}
+          className="text-white hover:text-cyan-400 transition duration-300"
+        >
+          About Us
+        </Link>
+        <Link
+          to={'/ContactPage'}
+          className="text-white hover:text-cyan-400 transition duration-300"
+        >
+         Contact Us
+        </Link>
       </div>
     </footer>
   );
