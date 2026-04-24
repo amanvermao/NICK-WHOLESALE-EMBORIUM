@@ -11,6 +11,7 @@ import RefundPolicy from "./pages/RefundPolicy";
 import TermsAndCondition from "./pages/TermsAndCondition";
 import AboutUs from "./pages/AboutUs";
 import ContactPage from "./pages/ContactPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
 
@@ -31,6 +32,8 @@ function App() {
            <Route path="/TermsAndCondition" element={<TermsAndCondition/>} />
             <Route path="/AboutUs" element={<AboutUs/>} />
              <Route path="/ContactPage" element={<ContactPage/>} />
+             <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+             
 
       </Routes>
       <Footer/>

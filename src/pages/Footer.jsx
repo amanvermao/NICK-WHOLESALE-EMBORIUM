@@ -38,6 +38,13 @@ const Footer = () => {
         >
          Contact Us
         </Link>
+        <Link
+          to={'/PrivacyPolicy'}
+          className="text-white hover:text-cyan-400 transition duration-300"
+        >
+         PrivacyPolicy
+        </Link>
+        
       </div>
     </footer>
   );
