@@ -56,6 +56,7 @@ const RefundPolicy = () => {
             <li>Reason for Refund Request</li>
             <li>Photos or Videos (if product issue exists)</li>
             <li>Any relevant payment proof</li>
+            <li>Bank Account Details (for direct bank refunds if required)</li>
           </ul>
 
           <p className="leading-8 text-gray-700 mt-4">
@@ -98,32 +99,57 @@ const RefundPolicy = () => {
           </p>
         </section>
 
+        <section className="bg-green-50 border border-green-200 rounded-2xl p-6">
+          <h2 className="text-2xl font-semibold mb-4 text-green-700">
+            5. Direct Bank Refund Option
+          </h2>
+
+          <p className="leading-8 text-gray-700 font-medium">
+            Approved refunds can be sent directly to the customer’s bank account
+            for faster and more secure processing.
+          </p>
+
+          <p className="leading-8 text-gray-700 mt-4">
+            If the original payment source is unavailable, expired, failed, or
+            not supported for reversal, customers may choose a direct bank
+            transfer refund by sharing valid bank details with our support team.
+          </p>
+
+          <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-700 leading-8">
+            <li>Account Holder Name</li>
+            <li>Bank Name</li>
+            <li>Account Number</li>
+            <li>IFSC Code</li>
+            <li>Registered Mobile Number</li>
+          </ul>
+
+          <p className="leading-8 text-gray-700 mt-4">
+            Once approved, direct bank refunds are generally processed within
+            <span className="font-semibold text-green-700">
+              {" "}1 to 3 business days
+            </span>.
+          </p>
+        </section>
+
         <section>
           <h2 className="text-2xl font-semibold mb-4">
-            5. Refund Processing Time
+            6. Standard Refund Processing Time
           </h2>
-          <p className="leading-8 text-gray-700">
-            After approval, refunds are generally issued to the original payment
-            method used during checkout. Processing timelines may vary depending
-            on banks, card issuers, wallets, or payment gateways.
-          </p>
 
           <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-700 leading-8">
             <li>UPI / Wallets: 2 to 5 business days</li>
             <li>Debit / Credit Cards: 5 to 10 business days</li>
             <li>Net Banking: 3 to 7 business days</li>
             <li>Store Credit (if offered): Usually faster</li>
+            <li className="font-semibold text-green-700">
+              Direct Bank Transfer: 1 to 3 business days
+            </li>
           </ul>
-
-          <p className="leading-8 text-gray-700 mt-4">
-            Delays caused by financial institutions are outside our direct
-            control.
-          </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">
-            6. Non-Refundable Items
+            7. Non-Refundable Items
           </h2>
           <p className="leading-8 text-gray-700">
             Certain products or situations may not qualify for refunds,
@@ -141,30 +167,7 @@ const RefundPolicy = () => {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">
-            7. Order Cancellation Refunds
-          </h2>
-          <p className="leading-8 text-gray-700">
-            If an order is cancelled before shipment, eligible customers may
-            receive a full refund. If cancellation occurs after dispatch,
-            cancellation may be subject to shipping, handling, or return review
-            conditions.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">
-            8. Abuse Prevention
-          </h2>
-          <p className="leading-8 text-gray-700">
-            We reserve the right to decline refund requests involving repeated
-            abuse, suspicious activity, manipulated evidence, excessive returns,
-            or misuse of the refund system.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">
-            9. Need Help?
+            8. Need Help?
           </h2>
           <p className="leading-8 text-gray-700">
             If you have questions regarding your refund status or eligibility,
